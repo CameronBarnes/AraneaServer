@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3935f47-0394-42dc-b236-69af88495aee" name="Default Changelist" comment="" />
+    <list default="true" id="d3935f47-0394-42dc-b236-69af88495aee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/crypto/CredentialHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/crypto/Crypto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/crypto/credentials/Password.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/crypto/credentials/UsernamePasswordCredential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/database/DatabaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/database/DatabaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/database/DatabaseInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/database/DatabasePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/netowrking/ClientDatabaseCallbackListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/netowrking/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/netowrking/NetworkData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/netowrking/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/netowrking/ServerClientInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cameronbarnes/AraneaServer/core/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,35 +31,39 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ahICh0hirp3tvxs8BNh8hOJh10" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="E:/FelinEngine" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Aranea" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cameronbarnes.AraneaServer.database" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -47,7 +71,7 @@
       <module name="AraneaServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cameronbarnes.AraneaServer.core.*" />
+          <option name="PATTERN" value="com.cameronbarnes.AraneaServer.netowrking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,6 +99,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser" timestamp="1587446257553">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="116" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587446257553" />
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587354827104">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1587354827104" />
+    <state x="449" y="149" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587333613154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="149" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1587333613154" />
+    <state x="310" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587445030581">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="310" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1587445030581" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587354763298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587354763298" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1587182130730">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587182130730" />
     <state width="1493" height="190" key="GridCell.Tab.0.bottom" timestamp="1587181614017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -91,13 +139,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587181614017" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1587181478219">
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog" timestamp="1587331402903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587181478219" />
-    <state x="444" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1587181276580">
+    <state x="299" y="68" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1587331402903" />
+    <state x="77" y="102" width="1122" height="710" key="SettingsEditor" timestamp="1587359288152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="444" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587181276580" />
+    <state x="77" y="102" width="1122" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587359288152" />
+    <state x="444" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1587335103517">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="444" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587335103517" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587448847178">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587448847178" />
   </component>
 </project>
