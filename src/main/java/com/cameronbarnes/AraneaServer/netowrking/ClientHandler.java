@@ -1,9 +1,9 @@
 package com.cameronbarnes.AraneaServer.netowrking;
 
-import com.cameronbarnes.AraneaServer.crypto.Crypto;
-import com.cameronbarnes.AraneaServer.crypto.credentials.UsernamePasswordCredential;
+import com.cameronbarnes.AraneaCore.crypto.Crypto;
+import com.cameronbarnes.AraneaCore.networking.NetworkData;
 import com.cameronbarnes.AraneaServer.database.DatabaseInterface;
-import com.cameronbarnes.AraneaServer.database.DatabasePacket;
+import com.cameronbarnes.AraneaCore.database.DatabasePacket;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Contract;
@@ -16,10 +16,12 @@ import java.io.*;
 import java.net.Socket;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.util.UUID;
 
 public class ClientHandler extends Thread implements ClientDatabaseCallbackListener {
 	
 	private String mName;
+	private UUID mUUID;
 	private final ObjectInputStream mObjectIn;
 	private final ObjectOutputStream mObjectOut;
 	private Socket mSocket;
@@ -146,7 +148,10 @@ public class ClientHandler extends Thread implements ClientDatabaseCallbackListe
 			case CredentialResponse:
 				mDatabase.submitRequest(
 						DatabasePacket.credentialVerificationRequest(
-								data.getCredential()));
+								data.getProjectName(),
+								data.getCredential(),
+								data.getUUID())
+				);
 				break;
 		}
 	
@@ -191,7 +196,7 @@ public class ClientHandler extends Thread implements ClientDatabaseCallbackListe
 		switch (response) {
 			
 			case Success:
-				log.warn("Success was input to the error reporting function");
+				log.error("Success is not a valid error type to the error reporting function");
 				break;
 			case GenericFailure:
 				break;

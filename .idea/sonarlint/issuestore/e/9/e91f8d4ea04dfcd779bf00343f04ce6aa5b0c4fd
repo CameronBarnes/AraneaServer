@@ -1,0 +1,17 @@
+
+A	java:S131""Add a default case to this switch.(§Í‡­ùÿÿÿÿ8ìÿç˜¦.
+‰
+java:S1128"iRemove this unused import 'com.cameronbarnes.AraneaServer.crypto.credentials.UsernamePasswordCredential'.(Èä¸øÿÿÿÿ8ìÿç˜¦.
+O
+java:S1066"/Merge this if statement with the enclosing one.(÷ÛÙÀüÿÿÿÿ8ìÿç˜¦.
+A	java:S131""Add a default case to this switch.(¤ŞƒÊûÿÿÿÿ8ìÿç˜¦.
+R
+java:S1135"2Complete the task associated to this TODO comment.(Ê¿¶©ÿÿÿÿÿ8ìÿç˜¦.
+C	java:S108")Either remove or fill this block of code.(¼†Ë²8ìÿç˜¦.
+O
+java:S1066"/Merge this if statement with the enclosing one.(íşÛ¦şÿÿÿÿ8ìÿç˜¦.
+<	java:S131""Add a default case to this switch.(µÊÎ½8ìÿç˜¦.
+R
+java:S2629"7Use the built-in formatting to construct this argument.(½Œô¡8Ğ¬¹éÄ.
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(½Œô¡8Ğ¬¹éÄ.

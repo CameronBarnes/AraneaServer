@@ -1,0 +1,12 @@
+
+f
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(²ı…¦ûÿÿÿÿ8ìÿç˜¦.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(½¦ÿÿÿÿÿ8ö‚¸Ä.
+W
+java:S2629"7Use the built-in formatting to construct this argument.(ÆÛ‡ÿÿÿÿÿ8ª¬¹éÄ.
+R
+java:S2629"7Use the built-in formatting to construct this argument.(çÃ¾ş8ª¬¹éÄ.
+a
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ÆÛ‡ÿÿÿÿÿ8ª¬¹éÄ.
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(çÃ¾ş8ª¬¹éÄ.

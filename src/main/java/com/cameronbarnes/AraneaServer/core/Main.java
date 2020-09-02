@@ -5,8 +5,6 @@ import com.cameronbarnes.AraneaServer.netowrking.Server;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.security.Security;
-
 public class Main {
 	
 	private static final int NUM_DATABASE_THREADS = 5;
@@ -19,8 +17,11 @@ public class Main {
 	
 		System.out.println("Hello World!");
 		
-		DatabaseHandler databaseHandler = new DatabaseHandler(NUM_DATABASE_THREADS);
+		String uri = "localhost";
+		
+		DatabaseHandler databaseHandler = new DatabaseHandler(NUM_DATABASE_THREADS, uri);
 		Server server = new Server(databaseHandler);
+		server.start();
 		
 		while (run) {
 			
@@ -47,9 +48,12 @@ public class Main {
 			}
 			catch (InterruptedException e) {
 				e.printStackTrace();
+				databaseHandler.cleanup();
 			}
 			
 		}
+		
+		server.stopThread();
 		
 	}
 	

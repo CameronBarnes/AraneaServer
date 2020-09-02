@@ -1,0 +1,7 @@
+
+…
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(›°Ÿƒøÿÿÿÿ8ù‚¸Ä.
+W
+java:S2629"7Use the built-in formatting to construct this argument.(€Èºƒÿÿÿÿÿ8Ì¬¹éÄ.
+a
+java:S3457"AFormat specifiers should be used instead of string concatenation.(€Èºƒÿÿÿÿÿ8Ì¬¹éÄ.

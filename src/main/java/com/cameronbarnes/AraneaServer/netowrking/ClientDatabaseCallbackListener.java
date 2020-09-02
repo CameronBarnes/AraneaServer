@@ -1,6 +1,6 @@
 package com.cameronbarnes.AraneaServer.netowrking;
 
-import com.cameronbarnes.AraneaServer.database.DatabasePacket;
+import com.cameronbarnes.AraneaCore.database.DatabasePacket;
 
 public interface ClientDatabaseCallbackListener {
 	

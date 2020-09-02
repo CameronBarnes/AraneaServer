@@ -1,5 +1,10 @@
 package com.cameronbarnes.AraneaServer.database;
 
+import com.cameronbarnes.AraneaCore.database.DatabasePacket;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import org.jetbrains.annotations.NotNull;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class DatabaseClient extends Thread {
@@ -7,8 +12,12 @@ public class DatabaseClient extends Thread {
 	private ConcurrentLinkedQueue<DatabasePacket> mDatabasePackets;
 	private boolean running;
 	
-	public DatabaseClient(ConcurrentLinkedQueue<DatabasePacket> databasePackets) {
+	private final String  mDBURI;
+	private MongoClient mClient;
+	
+	public DatabaseClient(ConcurrentLinkedQueue<DatabasePacket> databasePackets, String uri) {
 		mDatabasePackets = databasePackets;
+		mDBURI = uri;
 	}
 	
 	@Override
@@ -26,6 +35,8 @@ public class DatabaseClient extends Thread {
 	}
 	
 	private void init() {
+		
+		mClient = MongoClients.create(mDBURI);
 	
 	}
 	
@@ -51,9 +62,23 @@ public class DatabaseClient extends Thread {
 		
 	}
 	
-	private void processRequest(DatabasePacket request) {
-	
-	
+	private void processRequest(@NotNull DatabasePacket request) {
+		
+		DatabasePacket.PacketType type = request.getPacketType();
+		
+		switch (type) {
+			
+			case AddUser:
+				break;
+			case ProcessCredentials:
+				break;
+			case RequestUserData:
+				break;
+			case RequestDocument:
+				break;
+			case RequestIndex:
+				break;
+		}
 	
 	}
 	
